@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FACD9DCC18BCBFE00000BCE7 /* HappyBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACD9DCB18BCBFE00000BCE7 /* HappyBeacon.framework */; };
 		FAFC41DD18ACC1C1002B3A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41DC18ACC1C1002B3A65 /* Foundation.framework */; };
 		FAFC41DF18ACC1C1002B3A65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41DE18ACC1C1002B3A65 /* CoreGraphics.framework */; };
 		FAFC41E118ACC1C1002B3A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41E018ACC1C1002B3A65 /* UIKit.framework */; };
@@ -18,7 +19,6 @@
 		FAFC41FC18ACC1C1002B3A65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41FB18ACC1C1002B3A65 /* XCTest.framework */; };
 		FAFC41FD18ACC1C1002B3A65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41DC18ACC1C1002B3A65 /* Foundation.framework */; };
 		FAFC41FE18ACC1C1002B3A65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC41E018ACC1C1002B3A65 /* UIKit.framework */; };
-		FAFC421318ACC2A0002B3A65 /* HappyBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC421218ACC2A0002B3A65 /* HappyBeacon.framework */; };
 		FAFC421518ACC2EE002B3A65 /* HBData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAFC421418ACC2EE002B3A65 /* HBData.plist */; };
 		FAFC421A18ACCDFD002B3A65 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFC421918ACCDFD002B3A65 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FACD9DCB18BCBFE00000BCE7 /* HappyBeacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HappyBeacon.framework; sourceTree = "<group>"; };
 		FAFC41D918ACC1C1002B3A65 /* HappySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFC41DC18ACC1C1002B3A65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAFC41DE18ACC1C1002B3A65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,7 +50,6 @@
 		FAFC41F418ACC1C1002B3A65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAFC41FA18ACC1C1002B3A65 /* HappySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFC41FB18ACC1C1002B3A65 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAFC421218ACC2A0002B3A65 /* HappyBeacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HappyBeacon.framework; path = ../Build/HappyBeacon.framework; sourceTree = "<group>"; };
 		FAFC421418ACC2EE002B3A65 /* HBData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HBData.plist; sourceTree = "<group>"; };
 		FAFC421918ACCDFD002B3A65 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -61,9 +61,9 @@
 			files = (
 				FAFC421A18ACCDFD002B3A65 /* CoreLocation.framework in Frameworks */,
 				FAFC41DF18ACC1C1002B3A65 /* CoreGraphics.framework in Frameworks */,
+				FACD9DCC18BCBFE00000BCE7 /* HappyBeacon.framework in Frameworks */,
 				FAFC41E118ACC1C1002B3A65 /* UIKit.framework in Frameworks */,
 				FAFC41DD18ACC1C1002B3A65 /* Foundation.framework in Frameworks */,
-				FAFC421318ACC2A0002B3A65 /* HappyBeacon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +101,8 @@
 		FAFC41DB18ACC1C1002B3A65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FACD9DCB18BCBFE00000BCE7 /* HappyBeacon.framework */,
 				FAFC421918ACCDFD002B3A65 /* CoreLocation.framework */,
-				FAFC421218ACC2A0002B3A65 /* HappyBeacon.framework */,
 				FAFC41DC18ACC1C1002B3A65 /* Foundation.framework */,
 				FAFC41DE18ACC1C1002B3A65 /* CoreGraphics.framework */,
 				FAFC41E018ACC1C1002B3A65 /* UIKit.framework */,
@@ -354,7 +354,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jadiaconu/Documents/iNovAction/Projects/Products/HappyBeacon/iSDK/Offline/Build,
+					/Users/jadiaconu/Documents/iNovAction/Projects/Products/HappyBeacon/iSDK/GitHub/HappySample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappySample/HappySample-Prefix.pch";
@@ -371,7 +371,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jadiaconu/Documents/iNovAction/Projects/Products/HappyBeacon/iSDK/Offline/Build,
+					/Users/jadiaconu/Documents/iNovAction/Projects/Products/HappyBeacon/iSDK/GitHub/HappySample,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappySample/HappySample-Prefix.pch";

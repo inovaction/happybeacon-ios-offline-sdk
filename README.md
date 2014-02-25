@@ -1,7 +1,6 @@
 HappyBeacon
 iOS Offline Library
 
-------------------------------------------------------------------------------------------
 Xcode integration
 ------------------------------------------------------------------------------------------
 
@@ -15,10 +14,13 @@ Xcode integration
 
 5) At the top of your application delegate include required header: 
 
+```objectivec
 #import <HappyBeacon/HB.h>
+```
 
 6) Init the library for foreground & background use
 
+```objectivec
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     [[HB shared] gone];
 }
@@ -26,20 +28,21 @@ Xcode integration
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     [[HB shared] go];
 }
+```
 
 7) Implement the HBDelegate protocol in your application delegate
 
+```objectivec
 - (void)beaconsInRange:(NSSet *)beacons;
 - (void)didEnterRangeOfBeacon:(HBBeacon *)beacon;
 - (void)didExitRangeOfBeacon:(HBBeacon *)beacon;
+```
 
-------------------------------------------------------------------------------------------
 Sample
 ------------------------------------------------------------------------------------------
 
 See attached HappySample project which handles entering/exiting by showing a simple alert.
 
-------------------------------------------------------------------------------------------
 FAQ
 ------------------------------------------------------------------------------------------
 
