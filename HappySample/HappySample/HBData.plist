@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>uuid</key>
+	<string>E2C56DB5-DFFB-48D2-B060-D0F5A71096E0</string>
+	<key>identifier</key>
+	<string>com.happybeacon</string>
+	<key>beacons</key>
+	<array>
+		<dict>
+			<key>major</key>
+			<string>1</string>
+			<key>minor</key>
+			<string>3</string>
+			<key>data</key>
+			<dict>
+				<key>message_enter</key>
+				<string>Beacon 3 welcome !</string>
+				<key>message_exit</key>
+				<string>Beacon 3 bye bye !</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>major</key>
+			<string>1</string>
+			<key>minor</key>
+			<string>4</string>
+			<key>data</key>
+			<dict>
+				<key>message_enter</key>
+				<string>Beacon 4 welcome !</string>
+				<key>message_exit</key>
+				<string>Beacon 4 bye bye !</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
